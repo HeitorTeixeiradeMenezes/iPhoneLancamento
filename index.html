@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>iPhone 17</title>
+</head>
+<body>
+    <main>
+        <article id="realese">
+            <div class="container centralizar">
+                <h1>Lançamento em <div id="tempo"></div></h1>
+                <h5>iPhone 17</h5>
+                <div class="fundoH3">
+                    <h3 class="fade-in">Inteligência além do toque</h3>
+                </div>
+                <img src="/style/content/iphone17Deitado.png" alt="" class="fade-in">
+                <input type="button" value="Comprar">
+                <p>A partir de R$8.999,00</p>
+            </div>
+        </article>
+        <article id="iphonecolors">
+            <h2>Qual é a sua palheta?</h2>
+            <div class="iphonecolorsContainer">
+                <div class="container-colors">
+                    <img src="/style/content/colors.png" alt="" id="colorsimg" class="fade-in">
+                    <div id="colors" class="fade-in">
+                        <button type="button"></button>
+                        <button type="button"></button>
+                        <button type="button"></button>
+                        <button type="button"></button>
+                        <button type="button"></button>
+                        <button type="button"></button>
+                        <button type="button"></button>
+                    </div>
+                </div>
+                <div class="iphoneMostrado fade-in">
+                    <img src="/style/content/preto.png" alt="" id="imagemDaCoriPhone">
+                </div>
+            </div>
+            
+        </article>
+        <article id="IaSiri">
+            <div class="containerIA">
+                <div>
+                    <h2>Crie com a nova Siri</h2>
+                </div>
+                <div class="containerIAContent">
+                    <div>
+                        <img src="/style/content/Siri.png" alt="" class="fade-in">
+                    </div>
+                    <div class="textIAcontent">
+                        <h4 class="fade-in">Edite com IA. Publique em segundos.</h3>
+                        <p class="fade-in">Melhore luz, remova falhas e aplique filtros profissionais com um toque. Crie fotos perfeitas direto no celular, sem precisar de apps extras</p>
+                        <input type="button" value="Comprar" class="fade-in">
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article id="faqiphone">
+            <div class="containerInfos">
+                <h2 class="white">Funcionalidades</h2>
+                <div class="containerboxes fade-in">
+                    <div class="box">
+                        <h4 class="white">Gestos no ar</h4>
+                        <p class="white">Sem toques. Sem limites. Controle tudo com gestos no ar. A nova forma de interagir com o seu iPhone chegou.</p>
+                    </div>
+                    <div class="box">
+                        <h4 class="white">Bateria solar</h4>
+                        <p class="white">Energia que vem da luz. Com tecnologia solar embutida, seu iPhone se carrega com o sol. Menos tomadas. Mais liberdade</p>
+                    </div>
+                    <div class="box">
+                        <h4 class="white">Recarga instantânea </h4>
+                        <p class="white">0 a 100 em 10 minutos. A Supercharge revoluciona o tempo de espera. Carregue em minutos. Aproveite por horas.</p>
+                    </div>
+                    <div class="box">
+                        <h4 class="white">Tela 120 Hz</h4>
+                        <p class="white">Frequência de atualização que varia entre 10 Hz e 120 Hz conforme o conteúdo exibido, otimizando a fluidez da imagem e economizando bateria.</p>
+                    </div>
+                </div>
+                <img src="/style/content/brancodeitado.png" alt="" class="fade-in">
+            </div>
+        </article>
+        <article id="usersApple">
+            <div class="containerUsers">
+                <h2 class="white">Usuários Apple</h2>
+                <div class="containerPersons">
+                    <div class="user fade-in">
+                        <div class="userImg"><img src="/style/content/Leonardo.png" alt=""></div>
+                        <div class="comentUser">
+                            <div class="nameStars">
+                                <h5>Leonardo</h5>
+                                <div class="starsNumber">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                </div>
+                            </div>
+                            <p class="white">“Não tem jeito, o iPhone continua sendo referência quando o assunto é desempenho e qualidade. O sistema é super fluido, a câmera entrega fotos incríveis mesmo em pouca luz, e a integração com outros dispositivos da Apple é simplesmente impecável. Vale cada centavo!”</p>
+                        </div>
+                    </div>
+                    <div class="user fade-in">
+                        <div class="userImg"><img src="/style/content/antonella.png" alt=""></div>
+                        <div class="comentUser">
+                            <div class="nameStars">
+                                <h5>Antonella</h5>
+                                <div class="starsNumber">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                    <img src="/style/content/Star.png" alt="" class="star">
+                                </div>
+                            </div>
+                            <p class="white">“Sério, não troco meu iPhone por nada! A câmera é perfeita pra tirar fotos lindas em qualquer lugar, a bateria dura o dia todo, e o design é simplesmente maravilhoso. Além disso, tudo funciona de forma tão intuitiva que facilita muito no dia a dia. Amo demais!”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <script>
+        let botoesColors = document.querySelectorAll("#colors button");
+        let coresiPhones = [
+            "/style/content/preto.png", "/style/content/Branco.png", 
+            "/style/content/Vermelho.png", "/style/content/Rosa.png",
+            "/style/content/Azul claro.png", "/style/content/Azul escuro.png",
+            "/style/content/Verde.png"
+        ]
+        const imagemDaCoriPhone = document.querySelector("#imagemDaCoriPhone")
+        function trocarCor(indicie) {
+            imagemDaCoriPhone.src = coresiPhones[indicie]
+        }
+        botoesColors.forEach(item => {
+            item.addEventListener('click', (e) => {
+                const index = Array.from(botoesColors).indexOf(e.currentTarget);
+                console.log('Índice:', index);
+                trocarCor(index);
+            });
+        });
+
+
+        const elements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio >= 0.3) {
+            entry.target.classList.add('visible');
+            }
+        });
+        }, {
+        threshold: 0.3
+        });
+        elements.forEach(el => observer.observe(el));
+
+        
+        // calcular tempo
+        const INTERVALO_MS = (20 * 24 * 60 * 60 + 3 * 60 * 60 + 2 * 60) * 1000;
+
+        // Data de início (primeira data-alvo)
+        const dataBase = new Date("2025-06-04T00:00:00Z"); // Use Z para UTC, ou remova para local
+        let proximaData = new Date(dataBase);
+
+        const contadorEl = document.getElementById('tempo');
+
+        function formatarTempo(ms) {
+        let totalSegundos = Math.floor(ms / 1000);
+
+        const dias = Math.floor(totalSegundos / 86400);
+        totalSegundos %= 86400;
+
+        const horas = Math.floor(totalSegundos / 3600);
+        totalSegundos %= 3600;
+
+        const minutos = Math.floor(totalSegundos / 60);
+
+        return `${dias}d ${horas}h ${minutos}m`;
+        }
+
+        function atualizarContador() {
+        const agora = new Date();
+
+        // Se o tempo atual passou da próxima data, atualiza somando o intervalo
+        while (agora > proximaData) {
+            proximaData = new Date(proximaData.getTime() + INTERVALO_MS);
+        }
+
+        const diff = proximaData - agora;
+        contadorEl.textContent = formatarTempo(diff);
+        }
+
+        // Atualiza o contador a cada segundo
+        setInterval(atualizarContador, 1000 * 60);
+        atualizarContador(); // Primeira atualização imediata
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+/* Aplica a personalização a todos os scrolls */
+::-webkit-scrollbar {
+    width: 6px; /* largura da barra vertical */
+    height: 15px; /* altura da barra horizontal (se necessário) */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* trilho invisível */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.3); /* cor da barrinha */
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* mais visível no hover */
+  }
+.centralizar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    margin: 0;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#realese{
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 10, 115, 1), rgba(255, 255, 255, 1));
+    margin: 0px
+}
+#realese .container{
+    margin: 0px 140px;
+    padding-top: 1px;
+}
+h1{
+    text-align: center;
+    margin: 0px;
+    margin-top: 80px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    color: white;
+}
+h5{
+    margin: 0px;
+    margin-top: 30px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+}
+h3{
+    margin: 0px;
+    margin-top: 30px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: white;
+    background: linear-gradient(
+      to right,
+      #ff4d4d,
+      #ff80c0,
+      #a274fd,
+      #9dfcfc,
+      #33ff66,
+      #ffff66,
+      #ff704d
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 2;
+}
+.fundoH3::before{
+    margin: 0px;
+    margin-top: 30px;
+    content: "Inteligência além do toque";
+    position: absolute;
+    font-size: 40px;
+    font-weight: 800;
+    background: linear-gradient(
+      to right,
+      #ff4d4d,
+      #ff80c0,
+      #a274fd,
+      #9dfcfc,
+      #33ff66,
+      #ffff66,
+      #ff704d
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    filter: blur(16px); /* isso cria o "embaçado" atrás do texto */
+    z-index: 1;
+}
+.container input{
+    width: 130px;
+    margin-top: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+    background-color: rgba(105, 135, 255, 1);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+.container p{
+    margin: 10px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+#iphonecolors{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+h2{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: rgb(0, 0, 0);
+}
+#iphonecolors h2{
+    text-align: right;
+}
+
+#iphonecolors .iphonecolorsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-colors{
+    display: flex;
+    margin-right: 310px;
+}
+#colorsimg{
+ width: 320px;
+ height: 680px;
+}
+#colors{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#colors button{
+    cursor: pointer;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+#colors button:nth-child(1){
+    background-color: rgba(59, 59, 57, 1);
+}
+#colors button:nth-child(2){
+    background-color: rgba(244, 241, 232, 1);
+}
+#colors button:nth-child(3){
+    background-color: rgba(154, 35, 34, 1);
+}
+#colors button:nth-child(4){
+    background-color: rgba(224, 179, 173, 1);
+}
+#colors button:nth-child(5){
+    background-color: rgba(152, 169, 185, 1);
+}
+#colors button:nth-child(6){
+    background-color: rgba(45, 55, 64, 1);
+}
+#colors button:nth-child(7){
+    background-color: rgba(111, 116, 94, 1);
+}
+.iphoneMostrado{
+    margin-top: 30px;
+}
+.iphoneMostrado img{
+    width: 230px;
+    transform: rotate(0deg);
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.fade-in.visible {
+    opacity: 1;
+}
+#IaSiri{
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 21, 21, 1));
+    margin: 0px
+}
+.containerIA{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.containerIAContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerIAContent > div:first-child {
+    margin-right: 140px;
+}
+.containerIAContent > div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h4{
+    text-align: center;
+    max-width: 540px;
+    margin-bottom: 0px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+}
+.containerIAContent p{
+    margin-bottom: 0px;
+    text-align: center;
+    max-width: 540px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+}
+.containerIAContent input{
+    width: 130px;
+    margin-top: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+    background-color: rgba(105, 135, 255, 1);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+#faqiphone{
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 21, 21, 1) 0px, rgba(0, 0, 0, 1) 280px, rgba(0, 0, 0, 1) 100%);
+    margin: 0px;
+    
+}
+.containerInfos{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.containerInfos h2{
+    margin: 0px;
+    margin-top: 200px;
+    text-align: center;
+}
+.containerboxes{
+    margin-top: 100px;
+    display: flex;
+    overflow-x: scroll;
+}
+.box{
+    width: 800px;
+}
+.box h4{
+    text-align: left;
+    margin: 0px;
+    margin-left: 50px;
+}
+.box p{
+    text-align: left;
+    width: 450px;
+    margin: 50px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+}
+.containerInfos img{
+    margin-top: 40px;
+    width: 760px;
+    align-self: center;
+}
+#usersApple{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0px;
+    display: flex;
+}
+.containerUsers{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerUsers h2{
+    align-self: self-start;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.comentUser{
+    margin-left: 30px;
+}
+.nameStars{
+    display: flex;
+    align-items: center;
+}
+.nameStars h5{
+    margin-top: 0px;
+    margin-bottom: 2px;
+    margin-right: 20px;
+}
+.comentUser p{
+    margin-bottom: 0px;
+    text-align: left;
+    max-width: 500px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.white{
+    color: white;
+}
