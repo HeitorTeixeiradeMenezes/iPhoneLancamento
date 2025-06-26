@@ -43,9 +43,11 @@ main{
     padding-top: 1px;
 }
 h1{
+    width: 900px;
+    line-height: 100px;
     text-align: center;
     margin: 0px;
-    margin-top: 80px;
+    margin-top: 30px;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 90px;
@@ -53,7 +55,7 @@ h1{
 }
 h5{
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 10px;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 32px;
@@ -61,7 +63,7 @@ h5{
 }
 h3{
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 10px;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -85,7 +87,7 @@ h3{
 }
 .fundoH3::before{
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 10px;
     content: "Inteligência além do toque";
     position: absolute;
     font-size: 40px;
@@ -109,7 +111,7 @@ h3{
 }
 .container input{
     width: 130px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 22px;
@@ -149,7 +151,8 @@ h2{
 }
 .container-colors{
     display: flex;
-    margin-right: 310px;
+    position: relative;
+    right: 80px;
 }
 #colorsimg{
  width: 320px;
@@ -221,9 +224,6 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.containerIAContent > div:first-child {
-    margin-right: 140px;
-}
 .containerIAContent > div:last-child {
     display: flex;
     flex-direction: column;
@@ -242,7 +242,7 @@ h4{
 .containerIAContent p{
     margin-bottom: 0px;
     text-align: center;
-    max-width: 540px;
+    width: 540px;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 25px;
@@ -335,6 +335,7 @@ h4{
 .nameStars{
     display: flex;
     align-items: center;
+    justify-content: left;
 }
 .nameStars h5{
     margin-top: 0px;
@@ -352,4 +353,313 @@ h4{
 }
 .white{
     color: white;
+}
+ @media (max-width: 1250px){
+    h1{
+    margin-top: 20px;
+    font-size: 80px;
+    line-height: 90px;
+    width: 760px;
+    }
+    h5{
+        margin-top: 5px;
+        font-size: 28px;
+    }
+    h3{
+        margin-top: 5px;
+        font-size: 36px;
+    }
+    .fundoH3::before{
+        margin-top: 5px;
+        font-size: 36px;
+    }
+    .container input{
+        width: 110px;
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 7px;
+    }
+    .container p{
+        margin: 10px;
+        font-size: 15px;
+    }
+    .container img{
+        height: 350px;
+    }
+    #iphonecolors{
+        max-width: 760px;
+    }
+    h2{
+        font-size: 54px;
+    }
+    .container-colors{
+        right: 80px;
+    }
+    #colorsimg{
+    width: 260px;
+    height: 580px;
+    }
+    #colors button{
+        margin-left: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+    }
+    .iphoneMostrado{
+        margin-top: 30px;
+    }
+    .iphoneMostrado img{
+        width: 220px;
+    }
+    .containerIA{
+        max-width: 760px;
+    }
+    .containerIAContent{
+        flex-direction: column;
+    }
+    h4{
+        max-width: 580px;
+        font-size: 40px;
+        margin: 0px;
+    }
+    .containerIAContent p{
+        width: 650px;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .containerIAContent input{
+        width: 130px;
+        margin-top: 20px;
+        font-size: 22px;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    .containerIAContent img{
+        width: 550px;
+    }
+    .containerInfos{
+        max-width: 760px;
+    }
+    .containerInfos h2{
+        margin-top: 200px;
+    }
+    .containerboxes{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .box{
+        width: 100%;
+    }
+    .box h4{
+        margin-left: 50px;
+    }
+    .box p{
+        width: 450px;
+        margin: 50px;
+        font-size: 22px;
+    }
+    .containerInfos img{
+        margin-top: 40px;
+        width: 600px;
+    }
+    .containerUsers{
+        max-width: 760px;
+    }
+    .user{
+        margin-bottom: 40px;
+    }
+    .userImg img{
+        width: 220px;
+    }
+    .comentUser{
+        margin-left: 30px;
+    }
+    .nameStars h5{
+        margin-bottom: 2px;
+        margin-right: 20px;
+    }
+    .comentUser p{
+        max-width: 500px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width: 759px){
+    h1{
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 40px;
+    width: 300px;
+    }
+    h5{
+        margin-top: 5px;
+        font-size: 17px;
+        width: 200px;
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        width: 300px;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    .fundoH3::before{
+        width: 300px;
+        text-align: center;
+        margin-top: 5px;
+        font-size: 24px;
+    }
+    .container input{
+        width: 65px;
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 7px;
+    }
+    .container p{
+        text-align: center;
+        width: 200px;
+        margin: 10px;
+        font-size: 11px;
+    }
+    .container img{
+        height: 180px;
+    }
+    #iphonecolors{
+        max-width: 320px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    .container-colors{
+        right: 25px;
+    }
+    #colorsimg{
+    display: none;
+    width: 160px;
+    height: 380px;
+    }
+    #colors{
+        margin-top: 20px;
+        height: 280px;
+    }
+    #colors button{
+        margin-left: 10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+    }
+    .iphoneMostrado{
+        margin-top: 30px;
+    }
+    .iphoneMostrado img{
+        width: 120px;
+    }
+    .containerIA{
+        max-width: 320px;
+    }
+    .containerIAContent{
+        flex-direction: column;
+    }
+    h4{
+        width: 320px;
+        font-size: 20px;
+        margin: 0px;
+    }
+    .containerIAContent p{
+        width: 320px;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .containerIAContent input{
+        width: 65px;
+        margin-top: 20px;
+        font-size: 12px;
+        border-radius: 30px;
+        padding: 5px;
+    }
+    .containerIAContent img{
+        width: 320px;
+    }
+    #faqiphone{
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255, 21, 21, 1) 0px, rgba(0, 0, 0, 1) 60px, rgba(0, 0, 0, 1) 100%);
+        margin: 0px;    
+    }
+    .containerInfos{
+        max-width: 310px;
+    }
+    .containerInfos h2{
+        margin-top: 80px;
+        text-align: left;
+    }
+    .containerboxes{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .box{
+        width: 235px;
+    }
+    .box h4{
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    .box p{
+        width: 210px;
+        margin: 10px;
+        font-size: 16px;
+    }
+    .containerInfos img{
+        margin-top: 40px;
+        width: 310px;
+    }
+    .containerUsers{
+        max-width: 320px;
+    }
+    .user{
+        margin-bottom: 0px;
+    }
+    .userImg{
+        align-self: start;
+        position: relative;
+        right: 10px;
+    }
+    .userImg img{
+        width: 80px;
+        border-radius: 0px;
+    }
+    .nameStars{
+        width: 200px;
+    }
+    .nameStars h5{
+        margin-top: 20px;
+        font-size: 22px;
+        text-align: left;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    .starsNumber{
+        margin-top: 23px;
+        display: flex;
+        position: relative;
+        right: 20px;
+    }
+    .starsNumber img{
+        width: 15px;
+    }
+    .comentUser{
+        margin-left: 0px;
+        width: 200px;
+    }
+    .comentUser p{
+        position: relative;
+        right: 100px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 300px;
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
 }

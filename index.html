@@ -17,7 +17,7 @@
                 </div>
                 <img src="/style/content/iphone17Deitado.png" alt="" class="fade-in">
                 <input type="button" value="Comprar">
-                <p>A partir de R$8.999,00</p>
+                <p>A partir de R$4.999,00</p>
             </div>
         </article>
         <article id="iphonecolors">
@@ -139,7 +139,6 @@
         botoesColors.forEach(item => {
             item.addEventListener('click', (e) => {
                 const index = Array.from(botoesColors).indexOf(e.currentTarget);
-                console.log('Índice:', index);
                 trocarCor(index);
             });
         });
