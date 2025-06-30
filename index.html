@@ -8,15 +8,20 @@
 </head>
 <body>
     <main>
+        <div class="avisoCompra fade-in displayOff" id="avisoCompra">
+            <h2>Aviso</h2>
+            <p>Página feita para um projeto pessoal, produtos não existem e não estão disponiveis para compra</p>
+            <button type="button" id="okAviso">OK</button>
+        </div>
         <article id="realese">
             <div class="container centralizar">
-                <h1>Lançamento em <span id="tempo"></span></h1>
+                <h1>Lançamento em <br><span id="tempo"></span></h1>
                 <h5>iPhone 17</h5>
                 <div class="fundoH3">
                     <h3 class="fade-in">Inteligência além do toque</h3>
                 </div>
                 <img src="style/content/iphone17Deitado.png" alt="" class="fade-in">
-                <input type="button" value="Comprar">
+                <input type="button" class="comprar aumenta-hover" value="Comprar">
                 <p>A partir de R$4.999,00</p>
             </div>
         </article>
@@ -26,13 +31,13 @@
                 <div class="container-colors">
                     <img src="style/content/colors.png" alt="" id="colorsimg" class="fade-in">
                     <div id="colors" class="fade-in">
-                        <button type="button"></button>
-                        <button type="button"></button>
-                        <button type="button"></button>
-                        <button type="button"></button>
-                        <button type="button"></button>
-                        <button type="button"></button>
-                        <button type="button"></button>
+                        <button type="button" class="aumenta-hover"></button>
+                        <button type="button" class="aumenta-hover"></button>
+                        <button type="button" class="aumenta-hover"></button>
+                        <button type="button" class="aumenta-hover"></button>
+                        <button type="button" class="aumenta-hover"></button>
+                        <button type="button" class="aumenta-hover"></button>
+                        <button type="button" class="aumenta-hover"></button>
                     </div>
                 </div>
                 <div class="iphoneMostrado fade-in">
@@ -53,7 +58,7 @@
                     <div class="textIAcontent">
                         <h4 class="fade-in">Edite com IA. Publique em segundos.</h4>
                         <p class="fade-in">Melhore luz, remova falhas e aplique filtros profissionais com um toque. Crie fotos perfeitas direto no celular, sem precisar de apps extras</p>
-                        <input type="button" value="Comprar" class="fade-in">
+                        <input type="button" value="Comprar" class="fade-in comprar aumenta-hover">
                     </div>
                 </div>
             </div>
@@ -124,6 +129,11 @@
 
         </article>
     </main>
+    <footer>
+        <p>Design e Desenvolvimento realizado por Heitor <br>
+            Imagens geradas por inteligencia artificial (ChatGPT)
+        </p>
+    </footer>
     <script>
         let botoesColors = document.querySelectorAll("#colors button");
         let coresiPhones = [
@@ -196,6 +206,17 @@
         setInterval(atualizarContador, 1000 * 60);
         atualizarContador(); // Primeira atualização imediata
 
+        const avisoCompra = document.getElementById("avisoCompra")
+        const okAviso = document.querySelector("#okAviso")
+        let comprarBtn = document.querySelectorAll(".comprar")
+        comprarBtn.forEach(item => {
+            item.addEventListener('click', (e) => {
+                avisoCompra.classList.remove("displayOff")
+            })
+        })
+        okAviso.addEventListener("click", () =>{
+            avisoCompra.classList.add("displayOff")
+        })
     </script>
 </body>
 </html>
